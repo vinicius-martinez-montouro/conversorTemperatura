@@ -12,20 +12,33 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:hint="@string/temperatura_em_fahrenheit"
+        android:hint="@string/temperatura"
         android:inputType="numberDecimal"
         android:textAlignment="center" />
 
-    <Button
-        android:id="@+id/button_converter"
-        android:layout_marginHorizontal="100dp"
-        android:layout_marginVertical="50dp"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Converter para Celsius" />
-
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/button_converter_celsius"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Celsius" />
+        <Button
+            android:id="@+id/button_converter_fahrenheit"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fahrenheit" />
+    </LinearLayout>
     <TextView
-        android:id="@+id/text_view_valor_celsus"
+        android:id="@+id/text_view_valor_convertido"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"

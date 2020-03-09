@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">ConversorTemperatura</string>
-    <string name="temperatura_em_fahrenheit">Temperatura em Fahrenheit</string>
+    <string name="temperatura">Temperatura</string>
 </resources>
